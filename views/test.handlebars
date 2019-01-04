@@ -1,0 +1,28 @@
+<div class="container w3-animate-opacity gameCont">
+  <div type='hidden' id='turn'type='text' data-turn='{{data2.area}}'></div>
+  <div id="characterName" data-name="{{data.id}}" type="hidden"></div>
+  <div class='col-6' id='msg'></div>
+  <div id='hp1' data-hp="{{data.hp}}">hp: {{data.hp}}</div>
+  <div id='gold' data-gold="{{data.gold}}">gold: {{data.gold}}</div>
+  <button id="useWeapon" data-weapon="{{data.assets}}">Use Weapon: {{data.assets}}</button>
+  <button id="run">Try and Escape</button>
+  <button id='next' class="gamebut">Next</button>
+  <button id="fight" class="gamebut">Fight Through</button>
+  <button id="sneak" class = "gamebut">Sneak Through</button>
+  <button id='shop' class="gamebut"><a  href="/test/shop/{{data.id}}">Shop </a></button>
+  <button id='adventure' class="gamebut">Adventure</button>
+  <div id= 'monster'></div>
+ 
+ 
+  
+   
+   <form method="POST" id='#potion1' action='/character/game/hp/{{data.id}}?_method=PUT' class='button-size'>
+    <input type="hidden" type="text" name="hp" value='yes'>
+    <br> 
+    <button id='boi'type="submit" class="gamebut eat">Use Potion: {{data.potion}}</button>
+</form>
+</div>
+ <button id="over" class= "gamebut"><a href="/">Start Again</a></button>
+  <div id ='overmg' class="overmg">You lost click the button to start over with a new character</div>
+  <div id= 'won' class= "overmg">Congratulations You Won! You got the sword and saved your lover!</div>
+  <button id ='playag' class='gamebut'><a href='/'>Play Again</a></button>

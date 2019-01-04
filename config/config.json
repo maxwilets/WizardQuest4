@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "n1qd749y7g83o94f",
+    "database": "g78ppwo7orsk0zn8",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "scripts":{
+      "start": "node server.js"
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": "password",
+    "database": "testdb",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
+  }
+}
